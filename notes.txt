@@ -1,0 +1,57 @@
+To view the pre-defined keywords in python:
+import keyword
+keyword.kwlist
+--------------------------------------------------------------------------
+Primitive DataTypes:
+--------------------------------------------------------------------------
+Integers:
+Floats
+Strings
+Boolian
+NoneType
+--------------------------------------------------------------------------
+String Operation:
+a. Lenght len ()
+b. Indexing [n]
+c. Concatination S1+S2
+--------------------------------------------------------------------------
+Arithmetic Operators:
+a. Addition +
+b. Substraction -
+c. Multiplication *
+d. Division /
+e. Floor Division // (Gives Division value without remainder)
+f. Modulus % (Gives only remainder)
+g. Exponent ** (Exponential Operator ex. a ** b -> a to the power of b)
+h. Assignment Operator =
+i. Compound Assignment += (x += 1 this means x = x + 1)
+j. Compound Assignment -= (x -= 1 this means x = x - 1)
+k. Compound Assignment *= (x *= 1 this means x = x * 1)
+l. Compound Assignment /= (x /= 1 this means x = x / 1)
+--------------------------------------------------------------------------
+Comparision Operators (Gives True or False):
+==
+!=
+>
+<
+>=
+<=
+--------------------------------------------------------------------------
+Logical Operators:
+and
+or
+not
+--------------------------------------------------------------------------
+Functions:
+print ()
+input ("promt") --> Any input from the user is stored as a string.
+type() --> Give the DataTypes.
+--------------------------------------------------------------------------
+try:
+    
+except ValueError:
+    print("Error: Please enter valid integers.")
+--------------------------------------------------------------------------
+Slicing in strings:
+len() -- Lenght of a input string
+
