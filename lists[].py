@@ -89,5 +89,22 @@ print(f"The total sum of numbers in list l4 is {sum(l4)}")
 l5 = [3, 5, 0, "python", [1,2,4], True, None, 10]
 print("list l5 =", l5)
 #inner list [1,2,4] is at index 4 and fetching its element of 2nd index i.e 4
-print(f"fetching element from list inside a list {l5[4][2]}") # the index will increase as the nested lists increases.
+print(f"fetching element from list inside a list -> {l5[4][2]}") # the index will increase as the nested lists increases.
 
+#shallow copy & deep copy
+import copy  #importing copy module
+#shalow copy
+l6 = copy.copy(l5) # module.function()
+print(l6)
+#changing the single values from l5 and lets check if the list l6 afftected
+l5[0] = 4 #updating 3 to 4 in l5
+l5[4][0] = 100 #updating the list item inside the main list in list l6
+print(f"l5-> {l5}", id(l5))
+print(f"l6-> {l6}", id(l6))  #inner list updated value will get updated in the copied list as well due to same memory location of its in both lists.
+
+#deepcopy 
+l7 = copy.deepcopy(l5)
+l5[0] = 40 #updating 3 to 4 in l5
+l5[4][0] = 200 
+print(f"l5-> {l5}", id(l5))
+print(f"l7-> {l7}", id(l7)) #with deepcopy, even inner list items also remains intact when the main list get updated.
