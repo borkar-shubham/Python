@@ -1,0 +1,11 @@
+A module is a container for code (functions, classes, and variables).
+Modules are the pre-writtened python programs and can be used in other programs.
+Some functions like print, id, min, max, etc are pre-imported with python, these are the kind of inbuilt modules.
+The modules which are not part of a pre-imported modules needs to be import using the "import" keyword and use the function in it.
+
+#calling entire module
+#import maths
+
+#calling specific function of a module
+#from maths import sqrt
+
