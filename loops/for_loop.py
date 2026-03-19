@@ -90,7 +90,37 @@ for num in numbers:
         print("Found it!")
         break #as soon as it will find the 30, it will stops the next iterations and exit the loop.
 
+#loop with lists
 
+countries = ["India", "France", "Germany", "Japan", "Iran", "Isrel", "China", "Rassia", "Iceland"]
+#count the contries starting with 'I'.
+counter = 0 #starting the counter from 0 index
+output = [] #initially the output is an empty list
+for country in countries:
+    if country[0] == 'I':      #if country.startswith('I):
+        counter = counter + 1
+        output.append(country)
+print(counter)
+print(output)
+
+#loops with dictionaries 
+#deleting the sensitive information from the dictionary present in a list
+user = {
+    "user_name": "my_user",
+    "email": "user@example.com",
+    "password": "test@123",
+    "address": "abc road, 411057",
+    "country": "Bhutan"
+}
+sensitive_info = ["password", "address", "phone"]
+
+for i in sensitive_info: #for each iteration of sensitive_info
+    if i in user:    #checking if the given sensitive key is present in sensitive_info
+        user.pop(i)   #removing the element from a list
+    else:
+        print(f"The key {i} not present in ")
+
+print(f"User data after removing sensitive keys: \n {user}")
 
 
 
