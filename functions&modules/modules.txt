@@ -12,3 +12,5 @@ from maths import sqrt
 #importing module as alias
 import datetime as dt
 
+Study more on __name__ = "__main__":
+
