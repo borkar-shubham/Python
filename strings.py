@@ -60,6 +60,7 @@ print (s4 != s5) # prints True
 # Stripping - Removes spaces from the string
 s6 = "   Hello World   "
 print (s6.strip()) # removes leading and trailing spaces
+# check for rstrip - removes spaces from the end of a string 
 
 # Replace - Replaces a specified phrase with another specified phrase
 s7 = "Hello World"

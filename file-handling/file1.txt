@@ -1,0 +1,2 @@
+This is the new file created by file handler.
+This is next line

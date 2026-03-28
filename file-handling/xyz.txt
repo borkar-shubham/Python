@@ -1,0 +1,2 @@
+This is the new line created with new file by with statement.
+This is the another new line created by with statement.

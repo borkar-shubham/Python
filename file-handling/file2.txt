@@ -1,0 +1,3 @@
+This is the overwritten text using w mode.
+Have a nice day..!
+This is the appended line added by a mode.
