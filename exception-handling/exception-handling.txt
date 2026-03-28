@@ -1,0 +1,60 @@
+#Exceptions handling provides the smoother operation of tasks where the complete process does not stops in case of any error.
+
+try-except in Python:
+try-except is used for error handling — it lets your program handle errors gracefully instead of crashing.
+Basic Syntax
+try:
+    # Code that might cause an error
+except ExceptionType:
+    # Code that runs if the error occurs
+
+We use it for -
+
+1. Prevent program crashes
+x = int(input("Enter a number: "))  # crashes if user types "abc"
+
+# Safe version:
+try:
+    x = int(input("Enter a number: "))
+except ValueError:
+    print("Please enter a valid number!")
+
+2. Handle multiple errors
+try:
+    result = 10 / int(input("Enter divisor: "))
+except ValueError:
+    print("That's not a number!")
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+
+3. else — runs if no error occurred
+try:
+    x = int(input("Enter a number: "))
+except ValueError:
+    print("Invalid input!")
+else:
+    print(f"You entered: {x}")  # only runs if no exception
+
+4. finally — runs no matter what
+try:
+    fh = open("file.txt", "r")
+    content = fh.read()
+except FileNotFoundError:
+    print("File not found!")
+finally:
+    fh.close()  # always runs, error or not
+
+5. Catch any exception with Exception
+try:
+    risky_operation()
+except Exception as e:
+    print(f"Something went wrong: {e}")
+
+Summary:
+Block    Purpose -
+try:     Code that might raise an error
+except   Runs when a specific error occurs
+else     Runs only if no error occurred
+finally  Always runs, error or not
+
+The golden rule: only wrap code that you expect might fail, rather than putting everything inside a try block.
