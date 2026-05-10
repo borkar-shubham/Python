@@ -1,4 +1,4 @@
-import arithmetic
+import arithmetic  #This is the custom module that we created locally in arithmetic.py file.
 
 a = 9
 b = 6
